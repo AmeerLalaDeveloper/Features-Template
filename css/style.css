@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  min-width: 500px;
+  height: 100vh;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  background: #fadff5;
+  border-radius: 25px;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+header {
+  display: flex;
+}
+.title h1,
+.title p {
+  padding: 1rem 0;
+  width: 70%;
+}
+.title h1 {
+  font-size: 2.5rem;
+}
+.title p {
+  color: #9c9286;
+  line-height: 20px;
+}
+button {
+  height: 50%;
+  margin: auto;
+  width: 200px;
+  padding: 0.65rem;
+  border: none;
+  font-size: 1.05rem;
+  background: linear-gradient(50deg, white, blue);
+  border-radius: 25px;
+}
+button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: coral;
+}
+/*Grid*/
+.grid-box {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+img {
+  width: 100px;
+  height: 50px;
+}
+.box {
+  width: 100%;
+}
+.box h5 {
+  text-align: left;
+  font-size: 18px;
+  color: black;
+}
+.box p,
+h5 {
+  width: 90%;
+  margin: auto;
+  color: #9c9286;
+
+  padding: 0.5rem;
+}
+
+/*Media Query*/
+@media (max-width: 800px) {
+  .grid-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .title,
+  .title p,
+  .title h1 {
+    width: 100%;
+  }
+  button {
+    display: none;
+  }
+}
